@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="change.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="icon" href="favicon-1.ico" type="image/x-icon">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script href="js/bootstrap.min.js"></script>
+    <script href="jquery-3.2.1.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FFF;
+        }
+        
+        nav {
+            background-color: brown !important;
+        }
+        
+        .navbar-nav {
+            margin-left: 420px;
+        }
+        
+        .nav-item {
+            padding: 8px;
+        }
+        
+        .nav-item:hover {
+            background-color: darkred !important;
+        }
+        
+        .nav-link {
+            font-family: Montserrat;
+            font-size: 18px;
+            color: azure !important;
+        }
+        
+        .nav-link:hover {
+            color: darkseagreen !important;
+            font-size: 19px;
+        }
+        
+        .navbrand {
+            margin-left: 20px;
+        }
+        
+        .text-content {
+            text-align: center;
+            margin-top: 60px;
+            line-height: 30px;
+        }
+        
+        .firstp {
+            padding-top: 15px;
+        }
+        
+        .text center .btn {
+            border: 1px solid red;
+        }
+        
+        .container-fluid {
+            margin-top: 55px;
+        }
+        
+        .pic-container {
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+        
+        .pic-container .row {
+            padding-top: 20px;
+        }
+        
+        .pic-container .row .col-md-6 {
+            padding-top: 20px;
+        }
+        
+        .img-gallary h3 {
+            margin-top: 40px;
+            font-family: fantasy;
+        }
+        
+        .social_connect {
+            background-color: black;
+            margin: 30px 10px 30px 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        
+        .social_connect ul {
+            margin-left: 100px;
+        }
+        
+        .social_heading {
+            font-size: 33px;
+            margin: 50px 0 0 0;
+            color: #fff;
+        }
+        
+        .social_heading:hover {
+            color: chartreuse;
+        }
+        
+        .social_icons li {
+            float: left;
+            display: inline-block;
+            padding: 15px;
+        }
+        
+        .social_icons li a {
+            font-size: 35px;
+        }
+        
+        .carousel {
+            margin-top: 115px;
+        }
+        
+        .fa {
+            color: aliceblue;
+        }
+        
+        .fa:hover {
+            color: chartreuse;
+        }
+        
+        h4.social_info {
+            color: antiquewhite;
+            padding-top: 15px
+        }
+        
+        .footer {
+            margin-bottom: 15px;
+            font-family: fantasy;
+        }
+        
+        @media screen and (max-width:1000px) {
+            nav {
+                z-index: 1;
+                position: static;
+            }
+            .navbar-nav {
+                margin-left: 0px;
+            }
+            .nav-link {
+                font-family: Montserrat;
+                font-size: 16px;
+                color: burlywood !important;
+                text-align: center;
+            }
+            .nav-link:hover {
+                color: darkseagreen !important;
+                font-size: 17px;
+            }
+            .carousel {
+                margin-top: 100px;
+            }
+            .carousel img {
+                height: 290px;
+            }
+            .text-content {
+                text-align: center;
+            }
+            .framecontainer {
+                margin-top: 50px;
+            }
+            h2 {
+                margin-left: 50px;
+            }
+            .social_connect ul {
+                margin-left: 20px;
+            }
+            .pic-container img {
+                height: 190px;
+            }
+        }
+        
+        @media screen and (max-width:1024px)and (min-width:1002px) {
+            .navbar-nav {
+                margin-left: 100px;
+            }
+            .social_connect ul {
+                margin-left: 50px;
+            }
+        }
+        
+        @media screen and (max-width:1300px)and (min-width:1025px) {
+            .navbar-nav {
+                margin-left: 200px;
+            }
+            .text-content {
+                text-align: center;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light ">
+        <div class="navbrand"><img src="img1/logo.png"></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Gallary</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Reservation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Online order</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Career</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="img1/hlo.jpeg" height="400px" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img1/images.jpeg" height="400px" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img1/front.jpeg" height="400px" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <section id="story" class="description_content">
+        <div class="text-content container">
+            <div class="col-md-12">
+                <h4><center>Namaste  Welcome to Gurkha Oven in Spalding!</center></h4>
+                <h5><center>BAR|RESTAURANT|TAKEAWAY</center> </h5>
+                <p class="firstp">Gurkha Oven the first Nepalese & Indian Restaurant of its kind in town. Bringing you the best Nepalese & Indian cuisine with an unmatched ambience & setting that is truly mesmering.We are also pleased to introduce you to a new taste which is reflective of unique Gurkha Nepalese & Indian cusine. Born in the mountains of theHimalayas this has become a favouraite style of food throughout the world.
+                </p>
+                <p class="text-lef  mg-lg tc-yellow">
+                    Enjoy the relaxed ,friendly atmosphere and excellence service we provide in our Spadling Restaurant.You can also enjoy our fine foodin the comfort of your home,with our Takeaway Service.Or,if you live within our delivery area we will bring the Gurkha Oven experience to your doorstep.
+                </p>
+                <h3 class="text-center mg-lg tc-white"> Opening Hours </h3>
+                <h4 class="text-center mg-lg tc-white">We are open six days of a week</h4>
+            </div>
+
+            <div class="col-md-12">
+                <div class="text-center">
+                    <a class="btn  btn-xl btn-wire animDelay06 animated fadeInUp" href="#">Online Reservation</a>
+                </div>
+                <p class="text-center  mg-lg tc-yellow">Mon-CLOSED | Tues-Thurs : 17:00-22:30
+                    <br> Fri & Sat 17:00 – 23:00 | Sun 17:00 – 22:00</p>
+            </div>
+
+
+
+
+        </div>
+
+        <div class="container-fluid framecontainer">
+            <div class="row">
+                <div class="col-lg-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m0!4v1511769009297!6m8!1m7!1sYGLULuwzWemiMW3RORlLXg!2m2!1d52.78726972121794!2d-0.1541736328296395!3f256.91!4f-14.189999999999998!5f0.4000000000000002" width="100%" height="320" frameborder="12" style="border:12" allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-6">
+                    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook%2Fvideos%2F110411182460569%2F&ampwidth=500&ampshow_text=false&ampappId=169703439750548&amp" width="100%" height="320" style="border:none;overflow:hidden" scrolling="no" frameborder="12" allowTransparency="true"></iframe>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="img-gallary">
+        <h3><center>Img gallary</center></h3>
+        <div class="pic-container container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <img src="img1/dish4.jpeg" width="100%" height="250px">
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <img src="img1/dish5.jpeg" width="100%" height="250px"></div>
+                <div class="col-md-6 col-lg-3">
+                    <img src="img1/dish7.jpeg" width="100%" height="250px"></div>
+                <div class="col-md-6 col-lg-3">
+                    <img src="img1/dish6.jpeg" width="100%" height="250px"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <img src="img1/dish4.jpeg" width="100%" height="250px">
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <img src="img1/dish5.jpeg" width="100%" height="250px"></div>
+                <div class="col-md-6 col-lg-3">
+                    <img src="img1/dish7.jpeg" width="100%" height="250px"></div>
+                <div class="col-md-6 col-lg-3">
+                    <img src="img1/dish6.jpeg" width="100%" height="250px"></div>
+            </div>
+
+
+        </div>
+
+
+    </section>
+    <div class="location container-fluid">
+        <div class="row">
+            <div class="col-lg">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d603.239535526096!2d-0.1549736!3d52.7870629!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe767bf79d377b61f!2sGurkha+Oven!5e0!3m2!1sen!2sin!4v1511640538721" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="social_connect">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="social_heading">FOLLOW</span>
+                    <ul class="social_icons">
+                        <li>
+                            <a><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <span class="social_heading">OR DIAL</span>
+                    <h4 class="social_info">(+91)8790204530</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <center>
+            <h3>© 2017 Copyright: Gorkha Oven</h3></center>
+        <center>
+            <h4>By James Shrestha</h4></center>
+
+
+    </div>
+
+
+    <script>
+        $('.carousel').carousel({
+            interval: 3000
+        })
+    </script>
+
+</body>
+
+</html>
